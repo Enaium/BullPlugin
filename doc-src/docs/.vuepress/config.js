@@ -1,8 +1,8 @@
 module.exports = {
-  base: "BullPlugin",
+  base: "/BullPlugin/",
   title: 'BullPlugin',
   description: 'BullPlugin Doc',
-  dest: '../../docs',
+  dest: '../docs',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },

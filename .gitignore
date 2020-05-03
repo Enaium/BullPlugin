@@ -16,3 +16,7 @@ bin/
 # mavne
 
 target/
+
+#vuepress
+
+doc-src/node_modules
