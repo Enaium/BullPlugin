@@ -78,7 +78,7 @@ Add the annotation `@Plugin`.
 @Plugin
 public class Example implements PluginInitializer {
     @Override
-    public void init() {
+    public void onInitializer() {
         System.out.println("Already loaded!");
     }
 }
