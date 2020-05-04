@@ -9,7 +9,7 @@ features:
   details: Just enter the path to load.
 - title: Very small
   details: Less than 10KB.
-- title: Lightweight
+- title: Very lightweight
   details: No other libraries.
 footer: MIT Licensed | Copyright © 2020 Enaium
 ---
