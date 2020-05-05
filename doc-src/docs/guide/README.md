@@ -38,6 +38,10 @@ repositories {
 }
 ```
 
+### Libraries
+
+[releases](https://github.com/Enaium/BullPlugin/releases)
+
 ## Usage
 
 ### Load plugin
@@ -51,7 +55,6 @@ public interface PluginInitializer {
 ```
 
 Then load this plugin.
-
 
 ```java
 public static void main(String[] args) throws Exception {

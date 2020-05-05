@@ -38,4 +38,8 @@ repositories {
 }
 ```
 
+### Libraries
+
+[releases](https://github.com/Enaium/BullPlugin/releases)
+
  
