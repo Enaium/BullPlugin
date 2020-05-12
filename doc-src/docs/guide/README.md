@@ -10,31 +10,29 @@ sidebar: auto
 
 ```xml
 <repositories>
-    <repository>
-        <name>Enaium</name>
-        <id>Enaium</id>
-        <url>https://enaium.gitee.io/maven/</url>
-    </repository>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
 </repositories>
-
-<dependencies>
-    <dependency>
-        <groupId>cn.enaium</groupId>
-        <artifactId>bullplugin</artifactId>
-        <version>1.0.0</version>
-    </dependency>
-</dependencies>
+<dependency>
+	<groupId>com.github.Enaium</groupId>
+	<artifactId>BullPlugin</artifactId>
+	<version>1.0.0</version>
+</dependency>
 ```
 
 ### Gradle
 
 ```groovy
-dependencies {
-    compile group: 'cn.enaium', name: 'bullplugin', version: '1.0.0'
+allprojects {
+	repositories {
+		maven { url 'https://jitpack.io' }
+	}
 }
 
-repositories {
-	maven { url 'https://enaium.gitee.io/maven/' }
+dependencies {
+	implementation 'com.github.Enaium:BullPlugin:1.0.0'
 }
 ```
 
