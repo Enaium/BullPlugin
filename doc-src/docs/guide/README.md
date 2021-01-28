@@ -8,7 +8,7 @@ sidebar: auto
 
 ### Maven
 
-[![](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.enaium.cn%2Fcn%2Fenaium%2Fbullplugin%2Fmaven-metadata.xml&style=flat-square)]()
+[![](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.enaium.cn%2Fcn%2Fenaium%2Fbullplugin%2Fmaven-metadata.xml&style=flat-square)](https://maven.enaium.cn)
 
 ### JitPick
 
