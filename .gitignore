@@ -13,7 +13,12 @@ bin/
 .classpath
 .project
 
-# mavne
+# gradle
+
+.gradle/
+build/
+out/
+classes/
 
 target/
 

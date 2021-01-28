@@ -24,14 +24,14 @@ public class BullPlugin {
         this.pluginPath = pluginPath;
     }
 
-    public ArrayList<Object> getPlugins() throws Exception {
+    public ArrayList<Class<?>> getPlugins() throws Exception {
 
-        if (!pluginPath.exists()) throw new IOException("pathDoesNotExist");
+        if (!pluginPath.exists()) throw new IOException("Path does not exist");
 
-        if (!pluginPath.isDirectory()) throw new IOException("thePathIsNotADirectory");
+        if (!pluginPath.isDirectory()) throw new IOException("The path is not a directory");
 
-        ArrayList<File> files = new ArrayList<File>();
-        ArrayList<Object> plugins = new ArrayList<Object>();
+        ArrayList<File> files = new ArrayList<>();
+        ArrayList<Class<?>> plugins = new ArrayList<>();
 
         for (File file : pluginPath.listFiles()) {
             if (file.getName().endsWith(".jar")) {
@@ -49,9 +49,9 @@ public class BullPlugin {
                 }
                 String className = entry.getName().substring(0, entry.getName().length() - 6);
                 className = className.replace('/', '.');
-                Class<?> clazz = new URLClassLoader(new URL[]{f.toURL()}, Thread.currentThread().getContextClassLoader()).loadClass(className);
+                Class<?> clazz = new URLClassLoader(new URL[]{f.toURI().toURL()}, Thread.currentThread().getContextClassLoader()).loadClass(className);
                 if (clazz.getAnnotation(Plugin.class) != null) {
-                    plugins.add(clazz.newInstance());
+                    plugins.add(clazz);
                 }
             }
         }
