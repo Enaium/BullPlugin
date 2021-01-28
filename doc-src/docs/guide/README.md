@@ -8,68 +8,15 @@ sidebar: auto
 
 ### Maven
 
-```xml
-<repositories>
-	<repository>
-        <name>Enaium</name>
-		<id>Enaium</id>
-		<url>https://enaium.gitee.io/maven</url>
-	</repository>
-</repositories>
-<dependency>
-	<groupId>cn.enaium</groupId>
-	<artifactId>bullplugin</artifactId>
-	<version>1.0.0</version>
-</dependency>
-```
+[![](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.enaium.cn%2Fcn%2Fenaium%2Fbullplugin%2Fmaven-metadata.xml&style=flat-square)]()
 
-### Gradle
+### JitPick
 
-```groovy
-allprojects {
-	repositories {
-		maven { url 'https://enaium.gitee.io/maven' }
-	}
-}
-dependencies {
-	compile group: 'cn.enaium', name: 'bullplugin', version: '1.0.0'
-}
-```
-
-### JitPack
-
-#### Maven
-
-```xml
-<repositories>
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
-</repositories>
-<dependency>
-	<groupId>com.github.Enaium</groupId>
-	<artifactId>BullPlugin</artifactId>
-	<version>1.0.0</version>
-</dependency>
-```
-
-#### Gradle
-
-```groovy
-allprojects {
-	repositories {
-		maven { url 'https://jitpack.io' }
-	}
-}
-dependencies {
-	implementation 'com.github.Enaium:BullPlugin:1.0.0'
-}
-```
+[![](https://img.shields.io/jitpack/v/github/Enaium/BullPlugin?style=flat-square)](https://jitpack.io/#Enaium/BullPlugin)
 
 ### Libraries
 
-[releases](https://github.com/Enaium/BullPlugin/releases)
+[![](https://img.shields.io/github/v/release/enaium/bullplugin?style=flat-square)](https://github.com/Enaium/BullPlugin/releases)
 
 ## Usage
 
